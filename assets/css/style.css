@@ -1,12 +1,17 @@
-
-body {
-    background-image: url(../assets/images/trees.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    color: black;
-    font-family:monospace
+/* created custom CSS varibles to add color */
+:root {
+    --light: ghostwhite;
+    --dark: black;
 }
 
+body {
+    background-image: url(/assets/images/trees.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    color: var(--dark);
+    font-family:monospace
+}
+/* added media query for background image */
 @media (min-width: 1120px), (min-height: 1630px) {
     body { background-size:cover;}
 }
@@ -16,7 +21,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-color: ghostwhite;
+    background-color: var(--light);
     padding: 10px;
     margin-bottom: 5px;
     border-bottom: 1px;
@@ -33,10 +38,10 @@ li {
 }
 
 a {
-    color: black;
+    color: var(--dark);
     text-decoration: none;
 }
-
+/* used underline on liks when hovering over */
 a:hover {
     text-decoration: underline;
 }
@@ -60,17 +65,17 @@ a:hover {
 
 
 .about-me {
-    color: ghostwhite;
+    color: var(--light);
     font-size: 150%;
     padding: 5%;
 }
 
 .content {
-    color: ghostwhite;
+    color: var(--light);
     border-left: solid;
     padding: 10%;
 }
-
+/* used media query so 'about me' flexes properly */
 @media screen and (min-width: 768px) {
     .content {
       flex: 0 0 50%;
@@ -78,7 +83,7 @@ a:hover {
     } }
 
 .work {
-    color: ghostwhite;
+    color: var(--light);
     font-size: 150%;
     margin-top: 25px;
     margin-left: 7%;
@@ -95,14 +100,16 @@ a:hover {
   .my-work img {
     width: 200px;
     border-style: solid;
-    border-color: ghostwhite;
+    border-color: var(--light);
     margin: 25px;
     border-radius: 15px;
   }
 
+  /* pictures border turns red when hovering over */
  .my-work img:hover {
     box-shadow: 0 0 11px;
     color: red;
+    transform: scale(1.1);
  }
 
 
@@ -110,11 +117,11 @@ footer {
     display: flex;
     justify-content:space-between;
     flex-wrap: wrap;
-    color: white;
+    color: var(--light);
     background-color: gray;
     padding: 3%;
     border: 1px;
-    border-color: black;
+    border-color: var(--dark);
     border-style: double;
     font-size: 125%;
 }
