@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(/assets/images/trees.jpg);
+    background-image: url(../assets/images/trees.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     color: var(--dark);
@@ -105,7 +105,7 @@ a:hover {
     border-radius: 15px;
   }
 
-  /* pictures border turns red when hovering over */
+  /* pictures border turns red and grow when hovering over */
  .my-work img:hover {
     box-shadow: 0 0 11px;
     color: red;
