@@ -2,10 +2,13 @@
 body {
     background-image: url(/assets/images/trees.jpg);
     background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-size:cover;
+    background-position: 0 0;
     color: black;
     font-family:monospace
+}
+
+@media (min-width: 1120px), (min-height: 1630px) {
+    body { background-size:cover;}
 }
 
 header {
