@@ -1,12 +1,11 @@
-html {
-    background-image: url(assets\images\trees.jpg);
-}
 
 body {
-    background-image: url(assets\images\trees.jpg);
+    background-image: url(/assets/images/trees.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
     color: black;
     font-family:monospace
-    
 }
 
 header {
@@ -58,11 +57,13 @@ a:hover {
 
 
 .about-me {
+    color: ghostwhite;
     font-size: 150%;
     padding: 5%;
 }
 
 .content {
+    color: ghostwhite;
     border-left: solid;
     padding: 10%;
 }
@@ -74,6 +75,7 @@ a:hover {
     } }
 
 .work {
+    color: ghostwhite;
     font-size: 150%;
     margin-top: 25px;
     margin-left: 7%;
@@ -90,8 +92,9 @@ a:hover {
   .my-work img {
     width: 200px;
     border-style: solid;
-    border-color: black;
+    border-color: ghostwhite;
     margin: 25px;
+    border-radius: 15px;
   }
 
  .my-work img:hover {
@@ -107,7 +110,8 @@ footer {
     color: white;
     background-color: gray;
     padding: 3%;
-    border-top: 1px;
+    border: 1px;
+    border-color: black;
     border-style: double;
     font-size: 125%;
 }
