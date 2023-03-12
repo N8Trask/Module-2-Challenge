@@ -1,13 +1,12 @@
-* {
-    box-sizing: border-box;
-    margin: 0px;
-    font-size: 100%; 
+html {
+    background-image: url(assets\images\trees.jpg);
 }
 
 body {
-    background-color: white;
+    background-image: url(assets\images\trees.jpg);
     color: black;
-    font-family:Arial, Helvetica, sans-serif
+    font-family:monospace
+    
 }
 
 header {
@@ -17,6 +16,7 @@ header {
     align-items: center;
     background-color: ghostwhite;
     padding: 10px;
+    margin-bottom: 5px;
     border-bottom: 1px;
     border-style: double;
 }
@@ -43,8 +43,8 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     max-width: 25%;
-    padding-top: 15px;
     margin: auto;
+    border-radius: 20px;
 
 }
 
@@ -64,22 +64,50 @@ a:hover {
 
 .content {
     border-left: solid;
-    padding: 5%;
+    padding: 10%;
 }
+
+@media screen and (min-width: 768px) {
+    .content {
+      flex: 0 0 50%;
+      max-width: 50%;
+    } }
 
 .work {
     font-size: 150%;
-    padding: 5%;
-}
+    margin-top: 25px;
+    margin-left: 7%;
+    margin-bottom: 100px;
+    justify-content: center;
+  }
 
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .my-work img {
+    width: 200px;
+    border-style: solid;
+    border-color: black;
+    margin: 25px;
+  }
+
+ .my-work img:hover {
+    box-shadow: 0 0 11px;
+    color: red;
+ }
 
 
 footer {
     display: flex;
     justify-content:space-between;
     flex-wrap: wrap;
+    color: white;
     background-color: gray;
-    padding: 10px;
+    padding: 3%;
     border-top: 1px;
     border-style: double;
+    font-size: 125%;
 }
