@@ -9,11 +9,15 @@ body {
     background-repeat: no-repeat;
     background-position: 0 0;
     color: var(--dark);
-    font-family:monospace
+    font-family: monospace
 }
+
 /* added media query for background image */
-@media (min-width: 1120px), (min-height: 1630px) {
-    body { background-size:cover;}
+@media (min-width: 1120px),
+(min-height: 1630px) {
+    body {
+        background-size: cover;
+    }
 }
 
 header {
@@ -41,6 +45,7 @@ a {
     color: var(--dark);
     text-decoration: none;
 }
+
 /* used underline on liks when hovering over */
 a:hover {
     text-decoration: underline;
@@ -61,7 +66,7 @@ a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}  
+}
 
 
 .about-me {
@@ -75,12 +80,14 @@ a:hover {
     border-left: solid;
     padding: 10%;
 }
+
 /* used media query so 'about me' flexes properly */
 @media screen and (min-width: 768px) {
     .content {
-      flex: 0 0 50%;
-      max-width: 50%;
-    } }
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
 
 .work {
     color: var(--light);
@@ -89,33 +96,33 @@ a:hover {
     margin-left: 7%;
     margin-bottom: 100px;
     justify-content: center;
-  }
+}
 
-  div {
+div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
+}
 
-  .my-work img {
+.my-work img {
     width: 200px;
     border-style: solid;
     border-color: var(--light);
     margin: 25px;
     border-radius: 15px;
-  }
+}
 
-  /* pictures border turns red and grow when hovering over */
- .my-work img:hover {
+/* pictures border turns red and grow when hovering over */
+.my-work img:hover {
     box-shadow: 0 0 11px;
     color: red;
     transform: scale(1.1);
- }
+}
 
 
 footer {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-wrap: wrap;
     color: var(--light);
     background-color: gray;
