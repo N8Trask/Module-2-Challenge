@@ -98,6 +98,11 @@ a:hover {
     justify-content: center;
 }
 
+#hometown-sound {
+    height: 200px;
+    width: auto;
+}
+
 div {
     display: flex;
     flex-wrap: wrap;
